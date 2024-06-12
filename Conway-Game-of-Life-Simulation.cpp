@@ -1,6 +1,6 @@
 #include <raylib.h>
 #include <iostream>
-#include "grid.hpp"
+#include "simulation.hpp"
 
 int main()
 {	
@@ -13,16 +13,14 @@ int main()
 	InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Conway's Game of Life");
 	SetTargetFPS(FPS);
 
-	Grid grid = Grid(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
-	grid.SetValue(0, 0, 1);
-	grid.SetValue(2, 5, 1);
-	grid.SetValue(6, 5, 1);
+	Simulation simulation = Simulation(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
+	simulation.SetCellValue(4, 3, 1);
 
 	while (WindowShouldClose() == false)
 	{
 		BeginDrawing();
 		ClearBackground(GREY);
-		grid.Draw();
+		simulation.Draw();
 		EndDrawing();
 	}
 

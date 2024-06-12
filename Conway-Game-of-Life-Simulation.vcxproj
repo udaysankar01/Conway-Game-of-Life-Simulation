@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="Conway-Game-of-Life-Simulation.cpp" />
     <ClCompile Include="grid.cpp" />
+    <ClCompile Include="simulation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="grid.hpp" />
+    <ClInclude Include="simulation.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
