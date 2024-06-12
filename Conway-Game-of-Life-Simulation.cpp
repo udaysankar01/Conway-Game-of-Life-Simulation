@@ -21,6 +21,7 @@ int main()
 
 	while (WindowShouldClose() == false)
 	{
+		simulation.Update();
 		BeginDrawing();
 		ClearBackground(GREY);
 		simulation.Draw();
