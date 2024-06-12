@@ -14,7 +14,10 @@ int main()
 	SetTargetFPS(FPS);
 
 	Simulation simulation = Simulation(WINDOW_WIDTH, WINDOW_HEIGHT, CELL_SIZE);
-	simulation.SetCellValue(4, 3, 1);
+	simulation.SetCellValue(5, 29, 1);
+	simulation.SetCellValue(6, 0, 1);
+	simulation.SetCellValue(5, 0, 1);
+	simulation.SetCellValue(4, 0, 1);
 
 	while (WindowShouldClose() == false)
 	{
